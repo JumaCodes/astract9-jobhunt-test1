@@ -1,15 +1,16 @@
 import React from 'react'
-import Map from "../assets/images/Frame.svg"
 import ZoonIn from "../assets/images/zoomin.png"
 import ZoonOut from "../assets/images/zoomout.png"
 import "../assets/css/Ngmap.scss"
+import Map from './Map'
 
 const Ngmap = () => {
   return (
+    <section className="map-section">
     <div className='map-wrapper'>
       <div className="map-inner">
         <div className="iframe-wrapper">
-          <iframe src={Map} frameborder="0" className="map"></iframe>
+            <Map />
         </div>
 
         <div className="info-wrapper">
@@ -36,7 +37,8 @@ const Ngmap = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </section>
   )
 }
 
