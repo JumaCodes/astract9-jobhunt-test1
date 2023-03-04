@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --body-bg: #1F2335;
+  --body-col: #FFFFFF;
+  --font-style: 'Jost', sans-serif;
+  --icons-color: #006A76;
+  --icons-bg: #D0F8FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-col);
+
+  .app {
+    font-family: var(--font-style);
+
+    header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 30px 40px;
+
+      .nav {
+        display: flex;
+        flex-basis: 1;
+        margin-left: 50px;
+
+        .navLinks {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .navLink {
+            list-style: none;
+            padding: 0px 20px;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+
+            .dropbtn {
+              position: relative;
+            }
+          }
+
+          .dropdown-content-2 {
+            position: absolute;
+            top: 80px;
+            left: 40%;
+            display: none;
+            background-color: #FFFFFF;
+            padding: 20px;
+
+             p {
+                font-size: 16px;
+                color: #24304D;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                font-weight: normal;
+                margin: 10px 0px;
+              }
+          }
+
+          .dropdown-content {
+            position: absolute;
+            top: 80px;
+            left: 20%;
+            display: none;
+            background-color: #FFFFFF;
+            padding: 20px;
+
+            .dropdown-inner-content {
+              display: flex;
+              align-items: center;
+
+              .dropdown-inner-content-icon {
+                color: var(--icons-color);
+                background-color: var(--icons-bg);
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                border-radius: 5px;
+              }
+
+              .dropdown-inner-content-desc {
+                color: #24304D;
+
+                p {
+                  font-size: 16px;
+                }
+
+                .desc {
+                  font-weight: 600;
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+
+          .show {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+          }
+
+          .showLink {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .signup {
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-style: normal;
+            color: #000000;
+            background: #E5B805;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 23px;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
