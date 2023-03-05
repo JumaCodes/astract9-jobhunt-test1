@@ -3,6 +3,7 @@ import './assets/css/App.scss'
 import Hero from './components/Hero';
 import Ngmap from './components/Ngmap';
 import PieChart from './components/Charts';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Ngmap />
       <PieChart />
+      <Footer />
     </div>
   );
 }
