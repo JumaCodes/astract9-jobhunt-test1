@@ -143,11 +143,22 @@
     }
 
     .donut-chart {
-      width: 300px;
+      width: 350px;
+      padding: 20px 10px 0px 0px;
+
+      .donut-div {
+        width:'500px';
+        height: "100%";
+        display: 'flex';
+        justify-content: center;
+        align-items: center;
+         margin: 'auto auto'
+      }
+
     }
 
     .gender-info {
-      width: 250px;
+      width: 220px;
     }
   }
 }

@@ -1,33 +1,16 @@
 import React from 'react'
 import "../assets/css/Charts.scss"
-import Chart from 'react-apexcharts';
 import SmallerMap from './SmallerMap';
 import MaleIcon from "../assets/images/male.png"
 import FemaleIcon from "../assets/images/female.png"
+import Donut from './Donut';
 
 const PieChart = () => {
   return (
     <section className='charts'>
       <div className="chart-wrapper">
         <div className="donut-chart inner">
-          {/* <Chart
-            type="donut"
-            width= {382.61}
-            height= {322.61} 
-            series={[160512222, 8400100]}
-            
-            options={{
-              plotOptions: {
-                pie: {
-                  donut: {
-                    labels: {
-                      show:true,
-                    }
-                  }
-                }
-              }
-            }}
-          /> */}
+          <Donut />
         </div>
 
         <div className="map-chart inner">
