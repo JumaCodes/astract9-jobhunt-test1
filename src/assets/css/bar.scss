@@ -1,0 +1,60 @@
+.callout {
+    position: relative;
+    margin: 3em -0.0em;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    width: 250px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0em;
+        left: 55%;
+        box-sizing: border-box;
+        border: 0.5em solid #000;
+        border-color: transparent transparent #fff #fff;
+        transform-origin: 0 0;
+        box-shadow: -3px 3px 4px 0 rgba(0, 0, 0, 0.08);
+        transform: rotate(135deg);
+    }
+
+    .card{
+        min-height: 30px;
+        display: flex;
+        
+        color: #000;
+       align-content: center;
+
+        .img{
+            height: 100%;
+            width: 30%;
+            img{
+                width: 60px
+            }
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.all-callouts{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
